@@ -1,0 +1,40 @@
+body {
+    background-color: powderblue;
+    
+  }
+  h1 {
+    color: rgb(106, 26, 121);
+    font-family: verdana;
+    font-size: 300%;
+  }
+  p,h2 {
+    color: red;
+    font-family: courier;
+    font-size: 160%;
+    border: 2px solid rgb(22, 162, 85);
+    padding: 30px;
+    margin: 50px;
+  }
+
+  #articles {
+    color: rgb(174, 73, 73);
+    font-family: courier;
+    font-size: 160%;
+    border: 2px solid rgb(22, 162, 85);
+    padding: 30px;
+    margin: 50px;
+  }
+
+  .articles2 {
+    color: rgb(174, 73, 73);
+    font-family: courier;
+    font-size: 160%;
+    border: 2px solid rgb(22, 162, 85);
+    padding: 30px;
+    margin: 50px;
+
+  }
+
+  h1, h2, p {
+    text-align: center;
+  }
