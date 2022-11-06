@@ -3,8 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>NFINIT Labs</title>
+    <link rel="icon" type="image/png" href="/images/favicon.png">
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/00bf878156.js" crossorigin="anonymous"></script>  </head>
+    <script src="https://kit.fontawesome.com/00bf878156.js" crossorigin="anonymous"></script>  
+
+  
+  </head>
 
   <body>
     <header>
@@ -22,19 +26,46 @@
       </ul>
     </nav>
     <main>
-      <article style="color:blue;">
+      <article style="color:rgb(213, 213, 217);">
         <h2 style="font-size:28px;">Modpacks</h2>
         <div id="images">
         <img id="modpacks" src="images/modpacks.png" alt="Astroblock" width="400" height="200">
 
+        <p id="modPackText">   Best Modpacks ever :)</p>
 
       </div>
         <br>
         <div id="buttons">
-        <button onclick="document.getElementById('modpacks').src='images/astroblock.png'">Astroblock</button>
-        <button onclick="document.getElementById('modpacks').src='images/planetary.png'">Planetary</button>
-        <button onclick="document.getElementById('modpacks').src='images/infernalblock.png'">Infernalblock</button>
+        <button onclick="modPacksAstroblock(), modPacksTextAstoblock()">Astroblock</button>
+        <button onclick="modPacksPlanetary(), modPacksTextPlanetary()">Planetary</button>
+        <button onclick="modPacksInfernalblock(), modPacksTextInfernalblock()">Infernalblock</button>
 
+        <script>
+          function modPacksAstroblock() {
+            document.getElementById('modpacks').src='images/astroblock.png';
+          }
+
+          function modPacksPlanetary() {
+            document.getElementById('modpacks').src='images/planetary.png';
+          }
+
+          function modPacksInfernalblock() {
+            document.getElementById('modpacks').src='images/infernalblock.png';
+          }
+
+          function modPacksTextAstoblock() {
+            document.getElementById("modPackText").innerHTML = "AstroBlock is a modpack where you start in the asteroid. Now you are stranded in the asteroids in a in a space station and have to to repairs and somehow make fuel to get back to Earth.";
+          }
+
+          function modPacksTextPlanetary() {
+            document.getElementById("modPackText").innerHTML = "Planetary is a wasteland themed modpack where you start in destroyed planet and need to collect resources from meteors to build a rocket and leave to a better planet.";
+          }
+
+          function modPacksTextInfernalblock() {
+            document.getElementById("modPackText").innerHTML = "InfernalBlock is a nether themed modpack where you start in the nether after the overworld has been destroyed and need to collect resources to survive.";
+          }
+
+        </script>
          </div>
       </article>
     </main>
